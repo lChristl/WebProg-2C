@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <title>Act3</title>
+<body bgcolor="Aqua">
+<h1>Activity 3</h1>    
+<p id="demo3.1"> </p>
+<p id="demo3.2"> </p>
+<p id="demo3.3"> </p>
+<p id="demo3.4"> </p>   
+<p id="demo3.5"> </p>
+<p id="demo3.6"> </p> 
+<p id="demo3.7"> </p>
+<p id="demo3.8"> </p>   
+<p id="demo3.9"> </p>
+<p id="demo3.10"> </p> 
+<script>
+// Activity 3
+
+// Given: 
+let val = 10;
+let str3 = "10";
+let str4 = "ten";
+let isAwake = true;
+
+let a = val == str3;
+let b = val === str3;
+let c = !isAwake;
+let d = (str4 != "eleven" && val >= Number(str3));
+let e = (!isAwake || val > 5);
+let f = 0 == false;
+let g = 0 === false;
+let h = "10" > 2;
+let i = "abc" < "abd";
+let j = typeof (val + str3);
+
+document.getElementById("demo3.1").innerHTML=a;
+document.getElementById("demo3.2").innerHTML=b;
+document.getElementById("demo3.3").innerHTML=c;
+document.getElementById("demo3.4").innerHTML=d;
+document.getElementById("demo3.5").innerHTML=e;
+document.getElementById("demo3.6").innerHTML=f;
+document.getElementById("demo3.7").innerHTML=g;
+document.getElementById("demo3.8").innerHTML=h;
+document.getElementById("demo3.9").innerHTML=i;
+document.getElementById("demo3.10").innerHTML=j;
+
+</script>    
+</body>
+</html>
