@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <title>Act2</title>
+<body bgcolor="Aqua">
+<h1>Activity 2</h1>    
+<p id="demo2.1"> </p>
+<p id="demo2.2"> </p>
+<p id="demo2.3"> </p>
+<p id="demo2.4"> </p>   
+<p id="demo2.5"> </p>
+<p id="demo2.6"> </p> 
+<script>
+// Activity 2
+
+// Given: 
+let num = 21;
+let str = "21";
+let str2 = "twenty-one";
+let isActive = false;
+let firstName = "Samwise";
+let lastName = "Gamgee";
+
+let a =  num + str;
+let b = num - str2;
+let c = num + isActive;
+let d = firstName + " " + lastName + " is " + num + " years old";
+let e = isActive + str;
+let f = "Result: " + (num > 20 && isActive == false)
+
+document.getElementById("demo2.1").innerHTML=a;
+document.getElementById("demo2.2").innerHTML=b;
+document.getElementById("demo2.3").innerHTML=c;
+document.getElementById("demo2.4").innerHTML=d;
+document.getElementById("demo2.5").innerHTML=e;
+document.getElementById("demo2.6").innerHTML=f;
+
+</script>    
+</body>
+</html>
