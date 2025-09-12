@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OddEven</title>
+</head>
+<body>
+    <h2>Number is Odd or Even</h2>
+    
+    <p id="result"></p>
+    
+    <script>
+        function Parity(x){
+        // odd
+        if (x%2){
+            return x + " is odd";
+        }
+        // even
+        else {
+            return x + " is even";
+        }
+        }
+        let parity = Parity(5)
+    document.getElementById("result").innerHTML = "The number "+parity
+    </script>
+    
+</body>
+</html>
