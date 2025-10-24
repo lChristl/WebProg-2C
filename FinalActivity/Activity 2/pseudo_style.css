@@ -1,0 +1,58 @@
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: purple;
+}
+a:hover{
+    color:red;
+    text-decoration: underline;
+}
+a:active{
+    color:orange;
+}
+
+ul li:nth-child(odd){
+    background-color: #f0f8ff;
+}
+
+ul li:nth-child(even){
+    background-color: #e6ffe6;
+}
+
+.box{
+    width: 250px;
+    height: 100px;
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.box:hover{
+    background-color: lightblue;
+}
+
+.first-line-demo::first-letter{
+    font-size: 30px;
+    color:darkred;
+    font-weight: bold;
+}
+
+.first-line-demo::first-line{
+    text-transform: uppercase;
+    color:teal;
+
+}
+
+button:hover{
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #155d27;
+}
