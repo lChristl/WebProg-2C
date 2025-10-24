@@ -1,0 +1,26 @@
+p {
+    color: darkblue;
+    font-family: Arial, sans-serif;
+}
+div p {
+    color: green;
+}
+
+ul > li > span{
+    color: orange; 
+    font-weight: bold;
+}
+.highlight {
+    background-color: yellow; padding: 5px;
+    border: 1px solid black;
+}
+#unique {
+    color: red;
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+a [target=" blank"] {
+    color: purple; 
+    text-decoration: underline;   
+}
