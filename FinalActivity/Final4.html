@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.con {
+margin: 70px;
+border-style: groove;
+border-radius: 5px;
+padding: 50px;
+}
+input{
+width: 200px;
+}
+.result {
+    margin-top: 20px;
+}
+</style>
+<body>
+
+<div class="con">
+<h2>Password Strength Checker</h2>
+<label for="temp"></label>
+<input type="password" id="password" name="password" placeholder="Enter password">
+<button onclick="checkpass()">Check Password</button>
+<div id="result"></div>
+</div>
+<script>
+    function checkpass(){
+        var input = document.getElementById('password')
+        var result = document.getElementById('result')
+        try {
+            var input = input.value;
+            if (input ===""){
+                throw "Password cannot be empty!"
+            }
+            if (!/[A-Z]/.test(input)){
+                throw "Must contain atleast one uppercase letter!"
+            }
+            result.innerHTML ="✅Strong Password"
+            result.classList.remove('error');
+            result.classList.add('strong');
+        } catch (error){
+            result.innerHTML = "Error: " + error;
+            result.classList.remove('strong');
+            result.classList.add('error');
+        }
+    }
+</script>
+</body>
+</html>
