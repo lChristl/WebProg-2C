@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.con {
+margin: 70px;
+border-style: groove;
+border-radius: 5px;
+padding: 50px;
+}
+input{
+width: 200px;
+}
+.result {
+    margin-top: 20px;
+}
+</style>
+<body>
+
+<div class="con">
+<h2>Temperature Converter  (Celsius → Fahrenheit)</h2>
+<label for="temp"></label>
+<input type="text" id="temp" name="temp" placeholder="Enter Temperature in Celsius">
+<button onclick="convert()">Convert</button>
+<div id="result"></div>
+</div>
+<script>
+    function convert(){
+        var input = document.getElementById('temp')
+        var result = document.getElementById('result')
+        
+        try {
+            var input = input.value;
+
+            if (isNaN(input)){
+                throw "Please enter a number!"
+            }
+            if (input ===""){
+                throw "Please enter a value!"
+            }
+            
+            input = parseFloat(input);
+            var Fahrenheit = (input * 9 / 5) + 32;
+            result.innerHTML = input + "°C = " + Fahrenheit.toFixed(2)+ "°F"
+            result.classList.remove('error');
+        } catch (error){
+            result.innerHTML = "Error: " + error;
+            result.classList.add('error');
+        }
+
+    }
+</script>
+
+
+
+</body>
+</html>
